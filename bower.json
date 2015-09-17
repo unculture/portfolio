@@ -1,0 +1,24 @@
+{
+  "name": "Application",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "James Browne <newlsetters@jamesbrowne.me>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "normalize.css": "~3.0.2"
+  }
+}

@@ -1,0 +1,22 @@
+$slate: #44575B;
+$grey: #D1D1D1;
+$green: #7ED321;
+$red: #D0021C;
+$blue: #4A90E2;
+$mustard: #Ec982D;
+
+$small: 480px;
+$medium: 768px;
+$large: 1024px;
+
+* {
+  box-sizing: content-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: linear-gradient(180deg, $grey, $slate);
+}
