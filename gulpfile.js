@@ -8,6 +8,13 @@ var concat          = require ('gulp-concat');
 var sourcemaps      = require('gulp-sourcemaps');
 var livereload      = require('gulp-livereload');
 var plumber         = require('gulp-plumber');
+var browserify      = require('browserify');
+var source          = require('vinyl-source-stream');
+var buffer          = require('vinyl-buffer');
+var gutil           = require('gulp-util');
+
+
+
 
 gulp.task('default', ['sass', 'js'], function() {
     livereload.listen();
@@ -61,11 +68,16 @@ gulp.task('sass', ['csscomponents'], function() {
         .pipe(livereload());
 });
 
-gulp.task('js', function() {
-    return gulp.src([
-        'bower_components/jquery/dist/jquery.js',
-        'src/js/partials/_helloworld.js'
-        ])
+gulp.task('js', function () {
+    // set up the browserify instance on a task basis
+    var b = browserify({
+        entries: './src/js/main.js',
+        debug: true
+        // defining transforms here will avoid crashing your stream
+        //,transform: [reactify]
+    });
+
+    return b.bundle()
         .pipe(plumber({
             errorHandler: function(err) {
                 notify.onError({
@@ -77,11 +89,14 @@ gulp.task('js', function() {
                 this.emit('end');
             }
         }))
-        .pipe(sourcemaps.init())
-        .pipe(concat("main.js"))
+        .pipe(source('main.js'))
+        .pipe(buffer())
+        .pipe(sourcemaps.init({loadMaps: true}))
+        // Add transformation tasks to the pipeline here.
         .pipe(uglify())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist/js'))
+        .on('error', gutil.log)
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('./dist/js/'))
         .pipe(notify({
             title: "Gulp",
             subtitle: "Success",
@@ -90,3 +105,4 @@ gulp.task('js', function() {
         }))
         .pipe(livereload());
 });
+

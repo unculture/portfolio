@@ -30,6 +30,17 @@
     "gulp-plumber": "^0.6.6"
   },
   "dependencies": {
-    "gsap": "^1.18.0"
+    "browserify": "^11.1.0",
+    "gsap": "^1.18.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.6",
+    "jquery": "^2.1.4",
+    "pageres": "^2.1.0",
+    "scrollmagic": "^2.0.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "shots": "node shots.js"
   }
 }

@@ -9,12 +9,8 @@
   width: 300px;
   height: 300px;
   margin: 0.5rem;
-  transition: all 0.1s ease-in-out;
-  transform:  perspective(200em) rotateX(25deg);
+  //transform:  perspective(200em) rotateX(25deg);
 
-  &:hover {
-    transform:  rotateX(0deg);
-  }
 
   background: linear-gradient(20deg, $slate, darken($slate, 5%));
 
