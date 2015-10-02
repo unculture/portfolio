@@ -43,6 +43,7 @@ gulp.task('sass', ['csscomponents'], function() {
     return gulp.src(['src/scss/main.scss'])
         .pipe(plumber({
             errorHandler: function(err) {
+                console.log(err);
                 notify.onError({
                     title: "Gulp",
                     subtitle: "Failure",
@@ -80,6 +81,7 @@ gulp.task('js', function () {
     return b.bundle()
         .pipe(plumber({
             errorHandler: function(err) {
+                console.log(err);
                 notify.onError({
                     title: "Gulp",
                     subtitle: "Failure",

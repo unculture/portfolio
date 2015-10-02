@@ -1,0 +1,31 @@
+.l-navigational-sidebar {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 5vw;
+  width: 20vw;
+}
+
+.l-container {
+  width: 75vw;
+  margin-left: 25vw;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.l-content-column {
+  max-width: 600px;
+}
+
+@media (min-width: 400px) {
+  .l-navigational-sidebar {
+    width: 80px;
+  }
+
+  .l-container {
+    width: calc(95vw - 80px);
+    margin-left: calc(80px + 5vw);
+  }
+
+}
