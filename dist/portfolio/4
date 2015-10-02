@@ -17,10 +17,10 @@
     <nav role="navigation" class="main-navigation">
         <ul class="main-navigation__list">
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/portfolio.html">Portfolio</a>
+                <a class="main-navigation__list-link" href="/portfolio">Portfolio</a>
             </li>
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/contact.html">Contact</a>
+                <a class="main-navigation__list-link" href="/contact">Contact</a>
             </li>
         </ul>
         <ul class="main-navigation__service-list">
@@ -41,41 +41,30 @@
     <div class="l-content-column">
         <div class="article">
             <div class="article__header">
-                <img src="/assets/portfolio/9/featured.jpg" class="article__header-image">
+                <img src="/assets/portfolio/4/featured.jpg" class="article__header-image">
                 <div class="article__headings">
                     <div class="article__headings-separator">
-                        <h1 class="article__heading">Hotel Landing Pages</h1>
+                        <h1 class="article__heading">GreenZone Golf</h1>
                     </div>
                     <div class="article__headings-separator">
-                        <p class="article__standfirst">Business application for<a href="http://www.creativecherry.com">Creative Cherry</a></p>
+                        <p class="article__standfirst">Maintenance and Consulting for <a href="http://greenzonesports.com">GreenZone Sports</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="article__content">
                 <p>
-                    For one of the major online travel agents I created a command line application to create landing pages
-                    that would display custom information to, and gather information from, thousands of different hotels
-                    in 8 different languages.
+                    I consult for and maintain this Appcelerator Titanium / Django application.
                 </p>
                 <p>
-                    Pages were hosted statically on S3, and responses gathered via a PHP/MySQL application running on EC2.
-                </p>
-                <p>
-                    The application took data in the form of Excel spreadsheets and was able to produce reports as required
-                    from the responses gathered.
+                    Amongst other things, I made performance improvements which sped up the API and web views by tenfold, and fixed some serious bugs in subscription lifecycle code as well as making some purely cosmetic changes.
                 </p>
                 <ul class="buzzwords">
-                    <li class="buzzwords__word">PHP</li>
-                    <li class="buzzwords__word"> AWS</li>
-                    <li class="buzzwords__word"> S3</li>
-                    <li class="buzzwords__word"> Command Line</li>
+                    <li class="buzzwords__word">Python</li>
+                    <li class="buzzwords__word"> Django</li>
+                    <li class="buzzwords__word"> Stripe</li>
                     <li class="buzzwords__word"> Back End</li>
                 </ul>
-
-
-
-
             </div>
         </div>
 

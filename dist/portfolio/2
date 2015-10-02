@@ -17,10 +17,10 @@
     <nav role="navigation" class="main-navigation">
         <ul class="main-navigation__list">
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/portfolio.html">Portfolio</a>
+                <a class="main-navigation__list-link" href="/portfolio">Portfolio</a>
             </li>
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/contact.html">Contact</a>
+                <a class="main-navigation__list-link" href="/contact">Contact</a>
             </li>
         </ul>
         <ul class="main-navigation__service-list">

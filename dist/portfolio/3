@@ -17,10 +17,10 @@
     <nav role="navigation" class="main-navigation">
         <ul class="main-navigation__list">
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/portfolio.html">Portfolio</a>
+                <a class="main-navigation__list-link" href="/portfolio">Portfolio</a>
             </li>
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/contact.html">Contact</a>
+                <a class="main-navigation__list-link" href="/contact">Contact</a>
             </li>
         </ul>
         <ul class="main-navigation__service-list">
@@ -41,35 +41,36 @@
     <div class="l-content-column">
         <div class="article">
             <div class="article__header">
-                <img src="/assets/portfolio/8/featured.png" class="article__header-image">
+                <img src="/assets/portfolio/3/featured.jpg" class="article__header-image">
                 <div class="article__headings">
                     <div class="article__headings-separator">
-                        <h1 class="article__heading"><a href="http://360training.co.uk">360training.co.uk</a></h1>
+                        <h1 class="article__heading"><a href="http://creativecherry.com">creativecherry.com</a></h1>
                     </div>
                     <div class="article__headings-separator">
-                        <p class="article__standfirst">Marketing site and course directory for <a href="http://creativecherry.com">Creative Cherry</a></p>
+                        <p class="article__standfirst">A new marketing site for <a href="http://creativecherry.com">Creative Cherry</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="article__content">
                 <p>
-                    Built this responsive site for a corporate training consultancy which allows the company to showcase the available workshops in various categories, the trainers who give the workshops and various other products.
+                    My former employer asked me back to build out a Wordpress theme to fit their new branding and positioning. The design is by Graham Sykes and Mark Ellis.
                 </p>
-                <p>
-                    Uses Silverstripe's ORM to represent the logical structure of workshops to categories and trainers. There is an integration with an ElasticSearch service to provide a simple search function over the workshops.
-                </p>
+
                 <ul class="buzzwords">
-                    <li class="buzzwords__word">HTML5</li>
-                    <li class="buzzwords__word"> CSS</li>
-                    <li class="buzzwords__word"> JavaScript</li>
-                    <li class="buzzwords__word"> Grunt</li>
+                    <li class="buzzwords__word">Wordpress</li>
                     <li class="buzzwords__word"> PHP</li>
-                    <li class="buzzwords__word"> Silverstripe</li>
-                    <li class="buzzwords__word"> Elastic Search</li>
+                    <li class="buzzwords__word"> HTML5</li>
+                    <li class="buzzwords__word"> JavaScript</li>
+                    <li class="buzzwords__word"> Gulp</li>
+                    <li class="buzzwords__word"> Sass</li>
+                    <li class="buzzwords__word"> BEM</li>
+                    <li class="buzzwords__word"> CSS</li>
+                    <li class="buzzwords__word"> Velocity JS</li>
                     <li class="buzzwords__word"> Front End</li>
                     <li class="buzzwords__word"> Back End</li>
                 </ul>
+
             </div>
         </div>
 

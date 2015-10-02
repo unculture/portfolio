@@ -16,28 +16,22 @@
     <div class="nav-handle">Menu</div>
     <nav role="navigation" class="main-navigation">
         <ul class="main-navigation__list">
-           <!--     <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/insight.html">Insight</a>
-            </li> -->
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/portfolio.html">Portfolio</a>
+                <a class="main-navigation__list-link" href="/portfolio">Portfolio</a>
             </li>
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/contact.html">Contact</a>
+                <a class="main-navigation__list-link" href="/contact">Contact</a>
             </li>
         </ul>
         <ul class="main-navigation__service-list">
             <li class="main-navigation__service-list-item">
-                <a class="main-navigation__service-link" href="">GitHub</a>
+                <a class="main-navigation__service-link" href="https://github.com/unculture">GitHub</a>
             </li>
             <li class="main-navigation__service-list-item">
-                <a class="main-navigation__service-link" href="">LinkedIn</a>
+                <a class="main-navigation__service-link" href="http://uk.linkedin.com/in/onejamesbrowne">LinkedIn</a>
             </li>
             <li class="main-navigation__service-list-item">
-                <a class="main-navigation__service-link" href="">YunoJuno</a>
-            </li>
-            <li class="main-navigation__service-list-item">
-                <a class="main-navigation__service-link" href="">Onsite.io</a>
+                <a class="main-navigation__service-link" href="https://app.yunojuno.com/p/james-browne">YunoJuno</a>
             </li>
         </ul>
     </nav>
@@ -47,34 +41,36 @@
     <div class="l-content-column">
         <div class="article">
             <div class="article__header">
-                <img src="/assets/portfolio/1/featured.jpg" class="article__header-image">
+                <img src="/assets/portfolio/7/featured.png" class="article__header-image">
                 <div class="article__headings">
                     <div class="article__headings-separator">
-                        <h1 class="article__heading">Contact me</h1>
+                        <h1 class="article__heading"><a href="http://cobbcollective.com">cobbcollective.com</a></h1>
                     </div>
                     <div class="article__headings-separator">
-                        <p class="article__standfirst">I'm available from 6th October</p>
+                        <p class="article__standfirst">Modular front-end HTML, CSS and JavaScript for <a href="http://creativecherry.com">Creative Cherry</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="article__content">
-
                 <p>
-                    Find me on LinkedIn, YunoJuno or Twitter
+                    Built this single page site for an advertising industry consultancy. Integration with Silverstripe CMS. Responsive, with some animation on scroll.
                 </p>
-                <ul>
-                    <li><a href="http://uk.linkedin.com/in/onejamesbrowne">http://uk.linkedin.com/in/onejamesbrowne</a></li>
-                    <li><a href="https://app.yunojuno.com/p/james-browne">https://app.yunojuno.com/p/james-browne</a></li>
-                    <li><a href="http://twitter.com/onejamesbrowne">@onejamesbrowne</a></li>
+                <ul class="buzzwords">
+                    <li class="buzzwords__word">PHP</li>
+                    <li class="buzzwords__word"> Silverstripe</li>
+                    <li class="buzzwords__word"> HTML5</li>
+                    <li class="buzzwords__word"> CSS</li>
+                    <li class="buzzwords__word"> JavaScript</li>
+                    <li class="buzzwords__word"> Velocity JS</li>
+                    <li class="buzzwords__word"> Grunt</li>
+                    <li class="buzzwords__word"> Front End</li>
+                    <li class="buzzwords__word"> Back End</li>
                 </ul>
 
-                <p>
-                    Email me: <a href="mailto:contact@jamesbrowne.me">contact@jamesbrowne.me</a>
-                </p>
-                <p>
-                    Call me: <a href="tel:07779 804 426">07779 804 426</a>
-                </p>
+
+
+
             </div>
         </div>
 

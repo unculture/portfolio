@@ -17,10 +17,10 @@
     <nav role="navigation" class="main-navigation">
         <ul class="main-navigation__list">
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/portfolio.html">Portfolio</a>
+                <a class="main-navigation__list-link" href="/portfolio">Portfolio</a>
             </li>
             <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="/contact.html">Contact</a>
+                <a class="main-navigation__list-link" href="/contact">Contact</a>
             </li>
         </ul>
         <ul class="main-navigation__service-list">
@@ -41,35 +41,40 @@
     <div class="l-content-column">
         <div class="article">
             <div class="article__header">
-                <img src="/assets/portfolio/3/featured.jpg" class="article__header-image">
+                <img src="/assets/portfolio/9/featured.jpg" class="article__header-image">
                 <div class="article__headings">
                     <div class="article__headings-separator">
-                        <h1 class="article__heading"><a href="http://creativecherry.com">creativecherry.com</a></h1>
+                        <h1 class="article__heading">Hotel Landing Pages</h1>
                     </div>
                     <div class="article__headings-separator">
-                        <p class="article__standfirst">A new marketing site for <a href="http://creativecherry.com">Creative Cherry</a></p>
+                        <p class="article__standfirst">Business application for<a href="http://www.creativecherry.com">Creative Cherry</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="article__content">
                 <p>
-                    My former employer asked me back to build out a Wordpress theme to fit their new branding and positioning. The design is by Graham Sykes and Mark Ellis.
+                    For one of the major online travel agents I created a command line application to create landing pages
+                    that would display custom information to, and gather information from, thousands of different hotels
+                    in 8 different languages.
                 </p>
-
+                <p>
+                    Pages were hosted statically on S3, and responses gathered via a PHP/MySQL application running on EC2.
+                </p>
+                <p>
+                    The application took data in the form of Excel spreadsheets and was able to produce reports as required
+                    from the responses gathered.
+                </p>
                 <ul class="buzzwords">
-                    <li class="buzzwords__word">Wordpress</li>
-                    <li class="buzzwords__word"> PHP</li>
-                    <li class="buzzwords__word"> HTML5</li>
-                    <li class="buzzwords__word"> JavaScript</li>
-                    <li class="buzzwords__word"> Gulp</li>
-                    <li class="buzzwords__word"> Sass</li>
-                    <li class="buzzwords__word"> BEM</li>
-                    <li class="buzzwords__word"> CSS</li>
-                    <li class="buzzwords__word"> Velocity JS</li>
-                    <li class="buzzwords__word"> Front End</li>
+                    <li class="buzzwords__word">PHP</li>
+                    <li class="buzzwords__word"> AWS</li>
+                    <li class="buzzwords__word"> S3</li>
+                    <li class="buzzwords__word"> Command Line</li>
                     <li class="buzzwords__word"> Back End</li>
                 </ul>
+
+
+
 
             </div>
         </div>
