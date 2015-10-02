@@ -44,7 +44,7 @@
                 <img src="/assets/portfolio/6/featured.jpg" class="article__header-image">
                 <div class="article__headings">
                     <div class="article__headings-separator">
-                        <h1 class="article__heading"><a href="http://integreon.com">integreon.com</a></h1>
+                        <h1 class="article__heading"><a href="http://integreon.com">Integreon</a></h1>
                     </div>
                     <div class="article__headings-separator">
                         <p class="article__standfirst">Modular front-end HTML, CSS and JavaScript for <a href="http://creativecherry.com">Creative Cherry</a></p>

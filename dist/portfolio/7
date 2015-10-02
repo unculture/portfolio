@@ -44,7 +44,7 @@
                 <img src="/assets/portfolio/7/featured.png" class="article__header-image">
                 <div class="article__headings">
                     <div class="article__headings-separator">
-                        <h1 class="article__heading"><a href="http://cobbcollective.com">cobbcollective.com</a></h1>
+                        <h1 class="article__heading"><a href="http://cobbcollective.com">Cobb Collective</a></h1>
                     </div>
                     <div class="article__headings-separator">
                         <p class="article__standfirst">Modular front-end HTML, CSS and JavaScript for <a href="http://creativecherry.com">Creative Cherry</a></p>

@@ -44,7 +44,7 @@
                 <img src="/assets/portfolio/2/featured.png" class="article__header-image">
                 <div class="article__headings">
                     <div class="article__headings-separator">
-                        <h1 class="article__heading"><a href="http://powaband.com">powaband.com</a></h1>
+                        <h1 class="article__heading"><a href="http://powaband.com">Powaband</a></h1>
                     </div>
                     <div class="article__headings-separator">
                         <p class="article__standfirst">Parallax superhero adventure comic for <a href="http://powaband.com">Powaband</a></p>

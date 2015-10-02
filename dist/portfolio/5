@@ -44,7 +44,7 @@
                 <img src="/assets/portfolio/5/featured.jpg" class="article__header-image">
                 <div class="article__headings">
                     <div class="article__headings-separator">
-                        <h1 class="article__heading"><a href="http://phenomenalpeople.org.uk">phenomenalpeople.org.uk</a></h1>
+                        <h1 class="article__heading"><a href="http://phenomenalpeople.org.uk">Phenomenal People</a></h1>
                     </div>
                     <div class="article__headings-separator">
                         <p class="article__standfirst">Custom UGC app and marketing site for <a href="http://creativecherry.com">Creative Cherry</a></p>
