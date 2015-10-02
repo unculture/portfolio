@@ -14,7 +14,15 @@
   background-color: $primary-color;
   display: block;
   color: $primary-color-text;
+  a {
+    color: $primary-color-text;
+    &:visited {
+      color: $primary-color-text;
+
+    }
+  }
   margin: 0;
+
 }
 .article__standfirst {
   padding: 0.5rem 1rem;
