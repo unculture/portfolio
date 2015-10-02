@@ -1,3 +1,6 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} www.jamesbrowne.me [NC]
 RewriteRule ^(.*)$ http://jamesbrowne.me/$1 [L,R=301,NC]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
