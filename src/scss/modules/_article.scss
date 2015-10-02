@@ -5,8 +5,13 @@
   @include standardBoxShadow;
 }
 
+
 .article__header {
   position: relative;
+}
+
+.article__headings {
+  max-width: 100%;
 }
 
 .article__heading {
@@ -14,6 +19,7 @@
   background-color: $primary-color;
   display: block;
   color: $primary-color-text;
+  word-wrap: break-word;
   a {
     color: $primary-color-text;
     &:visited {
