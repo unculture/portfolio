@@ -1,0 +1,79 @@
+.main-navigation {
+  position: relative;
+  z-index: 3;
+  margin-top: 1rem;
+  display: none;
+  &:hover,
+  &.is-active {
+    display: block;
+  }
+  text-align: left;
+
+  @media (max-height: 558px) {
+    width: 100vw;
+  }
+}
+
+.main-navigation__list,
+.main-navigation__service-list {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.main-navigation__list {
+  margin-bottom: 1rem;
+}
+
+.main-navigation__list-item {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: $primary-color;
+  &:hover {
+    background-color: $primary-color-dark;
+  }
+  transition: background-color 0.2s ease-in-out;
+  @include standardBoxShadow;
+}
+
+.main-navigation__list-link {
+  color: $primary-color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:visited {
+    color: $primary-color-text;
+  }
+}
+
+.main-navigation__service-list {
+}
+.main-navigation__service-list-item {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  &:visited {
+    color: $primary-color-text;
+  }
+  background-color: $accent-color;
+  &:hover {
+    background-color: darken($accent-color, 5%);
+  }
+  transition: background-color 0.2s ease-in-out;
+  @include standardBoxShadow;
+}
+.main-navigation__service-link {
+  color: $primary-color-text;
+  &:visited {
+    color: $primary-color-text;
+  }
+  text-decoration: none;
+}
+
+
+.main-navigation__service-link,
+.main-navigation__list-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}

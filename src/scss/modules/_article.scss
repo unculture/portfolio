@@ -1,0 +1,53 @@
+.article {
+  margin: 1rem;
+  border-radius: 2px;
+  background-color: $primary-color-text;
+  @include standardBoxShadow;
+}
+
+.article__header {
+  position: relative;
+}
+
+.article__heading {
+  padding: 0.5rem 1rem;
+  background-color: $primary-color;
+  display: block;
+  color: $primary-color-text;
+  margin: 0;
+}
+.article__standfirst {
+  padding: 0.5rem 1rem;
+  background-color: $accent-color;
+  display: block;
+  color: $primary-color-text;
+  margin: 0;
+  a, a:visited {
+    color: $primary-color-text;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+.article__header-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article__content {
+  padding: 0 1rem 1rem 1rem;
+}
+
+@media (min-width: 420px) {
+  .article__headings {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .article__heading,
+  .article__standfirst {
+    display: inline-block;
+  }
+}

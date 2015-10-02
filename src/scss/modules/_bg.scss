@@ -1,0 +1,13 @@
+.bg {
+  @media (orientation: portrait) {
+    background: url('/assets/bg-large-portrait.jpg');
+  }
+  background: url('/assets/bg-large-landscape.jpg');
+  background-size: cover;
+  height: 100%;
+  width: 150%;
+  position: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+

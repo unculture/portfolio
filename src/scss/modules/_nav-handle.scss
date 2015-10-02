@@ -1,0 +1,30 @@
+.nav-handle {
+  display: block;
+  text-decoration: none;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 10vw;
+  color: $primary-color-text;
+  background-color: $primary-color;
+  &:hover {
+    background-color: $primary-color-dark;
+  }
+  font-size: 3vw;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 20vw;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+  @include standardBoxShadow;
+  cursor: pointer;
+}
+
+@media (min-width: 400px) {
+  .nav-handle {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 12px;
+  }
+}
