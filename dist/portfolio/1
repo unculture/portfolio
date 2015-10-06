@@ -57,7 +57,7 @@
                     For a large financial client, as part of a team of two (and occasionally three) we built out front-end templates for the showpiece pages of a new marketing site.
                 </p>
                 <p>
-                    Interesting features I built included the global mobile and desktop navigation, which included a country/language picker and a three level hierarchical mega menu, the homepage hero module with conigurable clickable hotspots and a before / after image slider widget which used canvas to display the images, as DOM elements weren't going to work with the design.
+                    Interesting features I built included the global mobile and desktop navigation, which included a country/language picker and a three level hierarchical mega menu, the homepage hero module with configurable clickable hotspots and a before / after image slider widget which used canvas to display the images, as DOM elements weren't going to work with the design.
                 </p>
                 <ul class="buzzwords">
                     <li class="buzzwords__word">
