@@ -1,6 +1,6 @@
 "use strict";
 
-import { React } from "react";
+var React = require("react");
 
 const Buzzwords = React.createClass({
     render() {

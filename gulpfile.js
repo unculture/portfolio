@@ -9,21 +9,27 @@ var sourcemaps      = require('gulp-sourcemaps');
 var livereload      = require('gulp-livereload');
 var plumber         = require('gulp-plumber');
 var browserify      = require('browserify');
+var watchify        = require('watchify');
+var babelify        = require('babelify');
 var source          = require('vinyl-source-stream');
 var buffer          = require('vinyl-buffer');
 var gutil           = require('gulp-util');
 
 
+var jsLibs = [
+    'react'
+    //'react-router'
+];
 
 
-gulp.task('default', ['sass', 'js'], function() {
+gulp.task('default', ['sass', 'jsLibs', 'js'], function() {
     livereload.listen();
     gulp.watch(
         "src/scss/**/*.scss", ['sass']
     );
-    gulp.watch(
-        "src/js/**/*.js", ['js']
-    );
+    //gulp.watch(
+    //    "src/js/**/*.js", ['js']
+    //);
 });
 
 gulp.task('csscomponents', function() {
@@ -69,42 +75,103 @@ gulp.task('sass', ['csscomponents'], function() {
         .pipe(livereload());
 });
 
-gulp.task('js', function () {
+gulp.task('jsLibs', function () {
     // set up the browserify instance on a task basis
     var b = browserify({
-        entries: './src/js/main.js',
-        debug: true
-        // defining transforms here will avoid crashing your stream
-        //,transform: [reactify]
-    });
+        debug: true,
+        require: jsLibs,
+        cache: {},
+        packageCache: {}
+    }).transform(babelify);
 
-    return b.bundle()
-        .pipe(plumber({
-            errorHandler: function(err) {
-                console.log(err);
+    function bundle() {
+        return b.bundle()
+            .on("error", function(err) {
+                console.log(err.toString());
                 notify.onError({
                     title: "Gulp",
                     subtitle: "Failure",
-                    message: "Error in task 'js'",
+                    message: "Error in task 'jsLibs'",
                     sound: "Frog"
                 })(err);
                 this.emit('end');
-            }
-        }))
-        .pipe(source('main.js'))
-        .pipe(buffer())
-        .pipe(sourcemaps.init({loadMaps: true}))
-        // Add transformation tasks to the pipeline here.
-        .pipe(uglify())
-        .on('error', gutil.log)
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('./dist/js/'))
-        .pipe(notify({
-            title: "Gulp",
-            subtitle: "Success",
-            message: "Task 'js' ran successfully",
-            sound: "Glass"
-        }))
-        .pipe(livereload());
+            })
+            .pipe(source('libs.bundle.js'))
+            .pipe(buffer())
+            .pipe(sourcemaps.init({loadMaps: true}))
+            // Add transformation tasks to the pipeline here.
+            //.pipe(uglify())
+            .on('error', gutil.log)
+            .pipe(sourcemaps.write('./'))
+            .pipe(gulp.dest('./dist/js/'))
+            .pipe(notify({
+                title: "Gulp",
+                subtitle: "Success",
+                message: "Task 'jsLibs' ran successfully",
+                sound: "Glass"
+            }))
+    }
+
+    b.on('update', function() {
+        return bundle();
+    });
+
+    return bundle();
+
+});
+
+gulp.task('js', function () {
+    // set up the browserify instance on a task basis
+    var b = browserify('./src/js/app.js', {
+        debug: true,
+        // defining transforms here will avoid crashing your stream - orlly?
+        cache: {},
+        packageCache: {}
+    });
+
+    jsLibs.forEach(function(lib) {
+        b.external(lib);
+    });
+
+    b.transform(babelify);
+
+    b = watchify(b);
+
+    function bundle() {
+        return b.bundle()
+            .on("error", function(err) {
+                    console.log(err.toString());
+                    notify.onError({
+                        title: "Gulp",
+                        subtitle: "Failure",
+                        message: "Error in task 'js'",
+                        sound: "Frog"
+                    })(err);
+                    this.emit('end');
+                }
+            )
+            .pipe(source('app.bundle.js'))
+            .pipe(buffer())
+            .pipe(sourcemaps.init({loadMaps: true}))
+            // Add transformation tasks to the pipeline here.
+            //.pipe(uglify())
+            .on('error', gutil.log)
+            .pipe(sourcemaps.write('./'))
+            .pipe(gulp.dest('./dist/js/'))
+            .pipe(notify({
+                title: "Gulp",
+                subtitle: "Success",
+                message: "Task 'js' ran successfully",
+                sound: "Glass"
+            }))
+            .pipe(livereload());
+    }
+
+    b.on('update', function() {
+        return bundle();
+    });
+
+    return bundle();
+
 });
 
