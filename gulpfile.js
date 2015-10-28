@@ -17,8 +17,8 @@ var gutil           = require('gulp-util');
 
 
 var jsLibs = [
-    'react'
-    //'react-router'
+    'react',
+    'react-router'
 ];
 
 
@@ -133,7 +133,8 @@ gulp.task('js', function () {
         b.external(lib);
     });
 
-    b.transform(babelify);
+    b.transform(babelify.configure({
+    }));
 
     b = watchify(b);
 
